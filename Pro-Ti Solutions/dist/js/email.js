@@ -4,6 +4,9 @@ $( document ).ready(function() {
     
     $( "#sendmail" ).submit(function( event ) {
         
+        var form  = $("#sendmail").serializeArray();
+        event.preventDefault()
+        
         console.log("teste123");
         $.ajax({
             type: "GET",
